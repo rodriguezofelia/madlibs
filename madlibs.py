@@ -61,14 +61,32 @@ def show_madlib():
     color = request.args.get('color')
     noun = request.args.get('noun')
     adjective = request.args.get('adjective')
+    noun_two = request.args.get('noun_two')
+    monster = request.args.get('monster_name')
+    number = request.args.get('number')
+    miles = request.args.get('number_of_miles')
+    place = request.args.get('place')
+    food = request.args.get('food')
 
+    food_list = request.args.getlist('food')
 
     return render_template("madlib.html",
                             person=person,
                             color=color,
                             noun=noun,
-                            adjective=adjective)
+                            adjective=adjective, 
+                            noun_two=noun_two,
+                            monster_name=monster, 
+                            number=number,
+                            number_of_miles=miles,
+                            place=place, 
+                            food=food,
+                            food_list=food_list)
 
+
+    #if theres more than one food
+    #put them in a list
+    #print out a string like this: "food1, food2, food3"... 
 
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
