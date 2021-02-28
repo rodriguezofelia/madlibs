@@ -84,10 +84,6 @@ def show_madlib():
                             food_list=food_list)
 
 
-    #if theres more than one food
-    #put them in a list
-    #print out a string like this: "food1, food2, food3"... 
-
 if __name__ == '__main__':
     # Setting debug=True gives us error messages in the browser and also
     # "reloads" our web app if we change the code.
