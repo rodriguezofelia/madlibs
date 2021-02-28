@@ -51,8 +51,6 @@ def show_madlib_form():
         return render_template("goodbye.html")
     else:
         return render_template("game.html")
-    # return render_template("compliment.html",
-    #                         yes_or_no=game_answer)
 
 
 @app.route('/madlib')
