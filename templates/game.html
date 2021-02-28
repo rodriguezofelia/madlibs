@@ -6,15 +6,23 @@
 <body>
     <form action="/madlib">
         Answer a few questions to generate your madlib!
-        <input type="text" name="madlib" value="person">
         <label>Enter a person's name: </label>
-        <input type="text" name="madlib" value="color">
+        <input type="text" name="madlib" value="person">
         <label>Enter a color: </label>
-        <input type="text" name="madlib" value="noun">
+        <input type="text" name="madlib" value="color">
         <label>Enter a noun:</label>
-        <input type="text" name="madlib" value="adjective">
+        <input type="text" name="madlib" value="noun">
         <label>Enter an adjective: </label>
+        <input type="text" name="madlib" value="adjective">
+        <input type="submit" name="madlib" value="submit">
+        
     </form>
+
+    <p>
+        There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
+        When {{ person }} went to pick it up, it burst into flames in a totally
+        {{ adjective }} way.
+    </p>
 
 </body>
 </html>
